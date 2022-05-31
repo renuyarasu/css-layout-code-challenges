@@ -640,11 +640,11 @@ body.hide {
   border: 0.5rem solid #fff;
 
   display: grid;
-  justify-items: center;
-  align-items: center;
 }
 .child{
   padding: 2rem;
   width: 50%;
   border: 0.5rem solid crimson;
+  justify-self: center;
+  align-self: center;
 }
