@@ -639,8 +639,8 @@ body.hide {
   height: calc(75vh - 2.5rem);
   border: 0.5rem solid #fff;
 
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
 }
 .child{
