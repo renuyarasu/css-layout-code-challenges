@@ -377,29 +377,29 @@ body {
 /**
    * Custom Classes
    */
-
+ 
    .wrapper{
      margin: 0 auto;
      width: clamp(calc(320px - 3rem), 75%, 70ch);
      height: calc(75vh - 2.5rem);
      border: 0.5rem solid #000;
    }
-   .menu ul{
-    list-style: none;
-    margin: 0;padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+   .grid ul{
+     list-style: none;
+     margin: 1rem;
+     padding: 0;
+     display: grid;
+     gap: 1rem;
+     grid-template-columns: repeat(4, 1fr);
+     grid-auto-flow: dense;
    }
-   .menu a{
-     display: block;
-     padding: 0.5rem 1rem;
-     text-decoration: none;
-     color: #fff;
-     border: 1px solid #000;
+   .grid li{
+     border: 0.5rem solid aquamarine;
+     /* display: flex;
+     justify-content: center;
+     align-items: center; */
    }
-   .menu a:hover{
-     background-color: #1f1f1f;
-     color: aqua;
+   .grid li.featured{     
+    border: 0.5rem solid crimson;
+    grid-column: span 2;
    }
