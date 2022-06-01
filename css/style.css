@@ -159,6 +159,8 @@ sup {
 
 img {
   border-style: none;
+  display: block;
+  max-width: 100%;
 }
 
 /* Forms
@@ -379,15 +381,18 @@ body {
    */
  
    .wrapper{
-     margin: 0 auto;
-     width: clamp(calc(320px - 3rem), 75%, 70ch);
-     height: calc(75vh - 2.5rem);
-     border: 0.5rem solid #000;
-     display: flex;
-     gap: 1rem;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
    }
-   .block{
-     padding: 0 1rem;     
-     border: 0.5rem solid bisque;
-     flex: 1;
+   .image img{
+     height: 100vh;
+     object-fit: cover;
+   }
+   .cover{
+     padding: 2rem;  
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 1rem; 
    }
